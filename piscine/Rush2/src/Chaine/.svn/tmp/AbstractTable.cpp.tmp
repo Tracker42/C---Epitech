@@ -1,0 +1,87 @@
+/**
+ *
+ *
+ *
+ */
+
+#include "AbstractTable.hh"
+
+AbstractTable::~AbstractTable() {
+	int i;
+	for (i = 0; i < size; i++) {
+		if (table[i]) {
+			delete table[i];
+		}
+	}
+	delete[] table;
+}
+
+void AbstractTable::createTable(int size) {
+	this->size = size;
+	table = new Objet*[size];
+	int i;
+	for (i = 0; i < size; i++) {
+		table[i] = NULL;
+	}
+}
+
+int AbstractTable::getSize() const {
+	return size;
+}
+
+int AbstractTable::getCount() const {
+	int count = 0;
+	while (table[count++]);
+	return --count;
+}
+
+Objet * AbstractTable::take() {
+	return take(0);
+}
+
+Objet *AbstractTable::take(int index) {
+	if (index >= 0 && index < size) {
+		Objet *value = table[index];
+		table[index] = NULL;
+		reorganize();
+		return value;
+	}
+	return NULL;
+}
+
+void AbstractTable::put(Objet* object) {
+	put(object, size - 1);
+}
+
+void AbstractTable::put(Objet* object, int index) {
+	if (index >= 0 && index < size && object) {
+		if (table[index]) {
+			throw ObjetException(MSG_ERROR_PUT);
+		}
+		else {
+			table[index] = object;
+			reorganize();
+		}
+	}
+}
+
+e_type * AbstractTable::regarder() const {
+	int count = getCount();
+	e_type * content = new e_type[count + 1];
+	int i;
+	for (i = 0; i < count; i++) {
+		content[i] = table[i]->getType();
+	}
+	return content;
+}
+
+void AbstractTable::reorganize() {
+	int i;
+	int j;
+	for (i = 0; i < size; i++) {
+		if (table[i]) {
+			table[j] = table[i];
+			j++;
+		}
+	}
+}

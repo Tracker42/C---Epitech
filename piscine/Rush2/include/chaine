@@ -1,0 +1,14 @@
+/**Interface**/
+#include "../src/Chaine/ObjectManagerInterface.hh"
+#include "../src/Chaine/ITable.hh"
+#include "../src/Chaine/ITapisRoulant.hh"
+
+/**Abstract**/
+#include "../src/Chaine/AbstractTable.hh"
+#include "../src/Chaine/ATapisRoulant.hh"
+
+/**Class**/
+#include "../src/Chaine/TablePePeNoel.hh"
+#include "../src/Chaine/TableAleat.hh"
+#include "../src/Chaine/TapisRoulantPePeNoel.hh"
+#include "../src/Chaine/TapisRoulantAleat.hh"

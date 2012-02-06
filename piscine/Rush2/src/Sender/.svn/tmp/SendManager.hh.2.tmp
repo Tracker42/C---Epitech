@@ -1,0 +1,34 @@
+/**
+ *
+ *
+ *
+ */
+
+#ifndef __SENDMANAGER_H__
+#define __SENDMANAGER_H__
+
+#include <string>
+
+#include "SendInterface.hh"
+
+class SendManager {
+protected:
+<<<<<<< .mine
+	static SendManager * instance = NULL;
+	SendInterface * sender;
+=======
+  static SendManager *instance;
+  SendInterface *sender;
+>>>>>>> .r64
+
+	SendManager();
+public:
+	~SendManager();
+	void registerSender(SendInterface *sender);
+	bool send(std::string & message);
+
+	static SendManager * getInstance();
+
+};
+
+#endif

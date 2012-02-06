@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="79">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="D01" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D01/ex00/white_rabbit.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D01/ex01/Makefile</itemPath>
+          <itemPath>D01/ex01/main.c</itemPath>
+          <itemPath>D01/ex01/menger.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D01/ex02/bitmap.h</itemPath>
+          <itemPath>D01/ex02/bitmap_header.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D01/ex03/drawing.c</itemPath>
+          <itemPath>D01/ex03/drawing.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D01/ex04/Makefile</itemPath>
+          <itemPath>D01/ex04/bitmap.h</itemPath>
+          <itemPath>D01/ex04/bitmap_header.c</itemPath>
+          <itemPath>D01/ex04/drawing.c</itemPath>
+          <itemPath>D01/ex04/drawing.h</itemPath>
+          <itemPath>D01/ex04/main.c</itemPath>
+          <itemPath>D01/ex04/menger.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ex05" projectFiles="true">
+          <itemPath>D01/ex05/pyramid.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="ex06" projectFiles="true">
+          <itemPath>D01/ex06/ex_6.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f8" displayName="ex07" projectFiles="true">
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="D02A" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D02A/ex00/simple_list.c</itemPath>
+          <itemPath>D02A/ex00/simple_list.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D02A/ex01/simple_btree.c</itemPath>
+          <itemPath>D02A/ex01/simple_btree.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D02A/ex02/generic_list.c</itemPath>
+          <itemPath>D02A/ex02/generic_list.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D02A/ex03/generic_list.c</itemPath>
+          <itemPath>D02A/ex03/generic_list.h</itemPath>
+          <itemPath>D02A/ex03/stack.c</itemPath>
+          <itemPath>D02A/ex03/stack.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D02A/ex04/generic_list.c</itemPath>
+          <itemPath>D02A/ex04/generic_list.h</itemPath>
+          <itemPath>D02A/ex04/queue.c</itemPath>
+          <itemPath>D02A/ex04/queue.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ex05" projectFiles="true">
+          <itemPath>D02A/ex05/generic_list.c</itemPath>
+          <itemPath>D02A/ex05/generic_list.h</itemPath>
+          <itemPath>D02A/ex05/map.c</itemPath>
+          <itemPath>D02A/ex05/map.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="ex06" projectFiles="true">
+          <itemPath>D02A/ex06/generic_list.c</itemPath>
+          <itemPath>D02A/ex06/generic_list.h</itemPath>
+          <itemPath>D02A/ex06/queue.c</itemPath>
+          <itemPath>D02A/ex06/queue.h</itemPath>
+          <itemPath>D02A/ex06/stack.c</itemPath>
+          <itemPath>D02A/ex06/stack.h</itemPath>
+          <itemPath>D02A/ex06/tree_traversal.c</itemPath>
+          <itemPath>D02A/ex06/tree_traversal.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="D02M" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D02M/ex00/mul_div.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D02M/ex01/mem_ptr.c</itemPath>
+          <itemPath>D02M/ex01/mem_ptr.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D02M/ex02/tab_to_2dtab.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D02M/ex03/func_ptr.c</itemPath>
+          <itemPath>D02M/ex03/func_ptr.h</itemPath>
+          <itemPath>D02M/ex03/func_ptr_enum.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D02M/ex04/add.c</itemPath>
+          <itemPath>D02M/ex04/castmania.c</itemPath>
+          <itemPath>D02M/ex04/castmania.h</itemPath>
+          <itemPath>D02M/ex04/div.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ex05" projectFiles="true">
+          <itemPath>D02M/ex05/ptr_tricks.c</itemPath>
+          <itemPath>D02M/ex05/ptr_tricks.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="D03" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D03/ex00/String.c</itemPath>
+          <itemPath>D03/ex00/String.h</itemPath>
+        </logicalFolder>
+        <itemPath>D03/Makefile</itemPath>
+        <itemPath>D03/main.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="D06" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D06/ex00/Makefile</itemPath>
+          <itemPath>D06/ex00/main.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D06/ex01/Makefile</itemPath>
+          <itemPath>D06/ex01/main.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D06/ex02/hopital.cpp</itemPath>
+          <itemPath>D06/ex02/hopital.h</itemPath>
+          <itemPath>D06/ex02/koaladoctor.cpp</itemPath>
+          <itemPath>D06/ex02/koaladoctor.h</itemPath>
+          <itemPath>D06/ex02/koaladoctorlist.cpp</itemPath>
+          <itemPath>D06/ex02/koaladoctorlist.h</itemPath>
+          <itemPath>D06/ex02/koalanurse.cpp</itemPath>
+          <itemPath>D06/ex02/koalanurse.h</itemPath>
+          <itemPath>D06/ex02/koalanurselist.cpp</itemPath>
+          <itemPath>D06/ex02/koalanurselist.h</itemPath>
+          <itemPath>D06/ex02/sickkoala.cpp</itemPath>
+          <itemPath>D06/ex02/sickkoala.h</itemPath>
+          <itemPath>D06/ex02/sickkoalalist.cpp</itemPath>
+          <itemPath>D06/ex02/sickkoalalist.h</itemPath>
+        </logicalFolder>
+        <itemPath>D06/Makefile</itemPath>
+        <itemPath>D06/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f8" displayName="D07A" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D07A/ex00/KoalaBot.cpp</itemPath>
+          <itemPath>D07A/ex00/KoalaBot.h</itemPath>
+          <itemPath>D07A/ex00/KreogCom.cpp</itemPath>
+          <itemPath>D07A/ex00/KreogCom.h</itemPath>
+          <itemPath>D07A/ex00/Parts.cpp</itemPath>
+          <itemPath>D07A/ex00/Parts.h</itemPath>
+          <itemPath>D07A/ex00/Skat.cpp</itemPath>
+          <itemPath>D07A/ex00/Skat.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f7" displayName="D07M" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D07M/ex00/Borg.cpp</itemPath>
+          <itemPath>D07M/ex00/Borg.hh</itemPath>
+          <itemPath>D07M/ex00/Federation.cpp</itemPath>
+          <itemPath>D07M/ex00/Federation.hh</itemPath>
+          <itemPath>D07M/ex00/Warpsystem.cpp</itemPath>
+          <itemPath>D07M/ex00/Warpsystem.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex03" projectFiles="true">
+          <itemPath>D07M/ex03/Admiral.cpp</itemPath>
+          <itemPath>D07M/ex03/Admiral.hh</itemPath>
+          <itemPath>D07M/ex03/Borg.cpp</itemPath>
+          <itemPath>D07M/ex03/Borg.hh</itemPath>
+          <itemPath>D07M/ex03/BorgQueen.cpp</itemPath>
+          <itemPath>D07M/ex03/BorgQueen.hh</itemPath>
+          <itemPath>D07M/ex03/Destination.hh</itemPath>
+          <itemPath>D07M/ex03/Federation.cpp</itemPath>
+          <itemPath>D07M/ex03/Federation.hh</itemPath>
+          <itemPath>D07M/ex03/Warpsystem.cpp</itemPath>
+          <itemPath>D07M/ex03/Warpsystem.hh</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f9" displayName="D08" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D08/ex00/droid.cpp</itemPath>
+          <itemPath>D08/ex00/droid.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D08/ex01/droid.cpp</itemPath>
+          <itemPath>D08/ex01/droid.hh</itemPath>
+          <itemPath>D08/ex01/droidmemory.cpp</itemPath>
+          <itemPath>D08/ex01/droidmemory.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D08/ex02/droid.cpp</itemPath>
+          <itemPath>D08/ex02/droid.hh</itemPath>
+          <itemPath>D08/ex02/droidmemory.cpp</itemPath>
+          <itemPath>D08/ex02/droidmemory.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D08/ex03/carrier.cpp</itemPath>
+          <itemPath>D08/ex03/carrier.hh</itemPath>
+          <itemPath>D08/ex03/droid.cpp</itemPath>
+          <itemPath>D08/ex03/droid.hh</itemPath>
+          <itemPath>D08/ex03/droidmemory.cpp</itemPath>
+          <itemPath>D08/ex03/droidmemory.hh</itemPath>
+        </logicalFolder>
+        <itemPath>D08/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f10" displayName="D09" projectFiles="true">
+        <logicalFolder name="f2" displayName="ex-1" projectFiles="true">
+          <itemPath>D09/ex-1/Exo-1.c</itemPath>
+          <itemPath>D09/ex-1/Exo-1.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D09/ex00/Character.cpp</itemPath>
+          <itemPath>D09/ex00/Character.hh</itemPath>
+          <itemPath>D09/ex00/Hunter.cpp</itemPath>
+          <itemPath>D09/ex00/Hunter.hh</itemPath>
+          <itemPath>D09/ex00/Mage.cpp</itemPath>
+          <itemPath>D09/ex00/Mage.hh</itemPath>
+          <itemPath>D09/ex00/Paladin.cpp</itemPath>
+          <itemPath>D09/ex00/Paladin.hh</itemPath>
+          <itemPath>D09/ex00/Priest.cpp</itemPath>
+          <itemPath>D09/ex00/Priest.hh</itemPath>
+          <itemPath>D09/ex00/Warrior.cpp</itemPath>
+          <itemPath>D09/ex00/Warrior.hh</itemPath>
+        </logicalFolder>
+        <itemPath>D09/Makefile</itemPath>
+        <itemPath>D09/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f11" displayName="D10" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D10/ex00/Peon.cpp</itemPath>
+          <itemPath>D10/ex00/Peon.hh</itemPath>
+          <itemPath>D10/ex00/Sorcerer.cpp</itemPath>
+          <itemPath>D10/ex00/Sorcerer.hh</itemPath>
+          <itemPath>D10/ex00/Victim.cpp</itemPath>
+          <itemPath>D10/ex00/Victim.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D10/ex01/AEnemy.cpp</itemPath>
+          <itemPath>D10/ex01/AEnemy.hh</itemPath>
+          <itemPath>D10/ex01/AWeapon.cpp</itemPath>
+          <itemPath>D10/ex01/AWeapon.hh</itemPath>
+          <itemPath>D10/ex01/Character.cpp</itemPath>
+          <itemPath>D10/ex01/Character.hh</itemPath>
+          <itemPath>D10/ex01/PlasmaRifle.cpp</itemPath>
+          <itemPath>D10/ex01/PlasmaRifle.hh</itemPath>
+          <itemPath>D10/ex01/PowerFist.cpp</itemPath>
+          <itemPath>D10/ex01/PowerFist.hh</itemPath>
+          <itemPath>D10/ex01/RadScorpion.cpp</itemPath>
+          <itemPath>D10/ex01/RadScorpion.hh</itemPath>
+          <itemPath>D10/ex01/SuperMutant.cpp</itemPath>
+          <itemPath>D10/ex01/SuperMutant.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex02" projectFiles="true">
+          <itemPath>D10/ex02/AssaultTerminator.cpp</itemPath>
+          <itemPath>D10/ex02/AssaultTerminator.hh</itemPath>
+          <itemPath>D10/ex02/ISpaceMarine.hh</itemPath>
+          <itemPath>D10/ex02/ISquad.hh</itemPath>
+          <itemPath>D10/ex02/Squad.cpp</itemPath>
+          <itemPath>D10/ex02/Squad.hh</itemPath>
+          <itemPath>D10/ex02/TacticalMarine.cpp</itemPath>
+          <itemPath>D10/ex02/TacticalMarine.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex03" projectFiles="true">
+          <itemPath>D10/ex03/AMateria.cpp</itemPath>
+          <itemPath>D10/ex03/AMateria.hh</itemPath>
+          <itemPath>D10/ex03/Character.cpp</itemPath>
+          <itemPath>D10/ex03/Character.hh</itemPath>
+          <itemPath>D10/ex03/Cure.cpp</itemPath>
+          <itemPath>D10/ex03/Cure.hh</itemPath>
+          <itemPath>D10/ex03/ICharacter.hh</itemPath>
+          <itemPath>D10/ex03/IMateriaSource.hh</itemPath>
+          <itemPath>D10/ex03/Ice.cpp</itemPath>
+          <itemPath>D10/ex03/Ice.hh</itemPath>
+          <itemPath>D10/ex03/MateriaSource.cpp</itemPath>
+          <itemPath>D10/ex03/MateriaSource.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D10/ex04/AsteroKreog.cpp</itemPath>
+          <itemPath>D10/ex04/AsteroKreog.hh</itemPath>
+          <itemPath>D10/ex04/DeepCoreMiner.cpp</itemPath>
+          <itemPath>D10/ex04/DeepCoreMiner.hh</itemPath>
+          <itemPath>D10/ex04/IAsteroid.hh</itemPath>
+          <itemPath>D10/ex04/IMiningLaser.hh</itemPath>
+          <itemPath>D10/ex04/KoalaSteroid.cpp</itemPath>
+          <itemPath>D10/ex04/KoalaSteroid.hh</itemPath>
+          <itemPath>D10/ex04/MiningBarge.cpp</itemPath>
+          <itemPath>D10/ex04/MiningBarge.hh</itemPath>
+          <itemPath>D10/ex04/StripMiner.cpp</itemPath>
+          <itemPath>D10/ex04/StripMiner.hh</itemPath>
+        </logicalFolder>
+        <itemPath>D10/Makefile</itemPath>
+        <itemPath>D10/main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f13" displayName="D13" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D13/ex00/Buzz.cpp</itemPath>
+          <itemPath>D13/ex00/Buzz.h</itemPath>
+          <itemPath>D13/ex00/Picture.cpp</itemPath>
+          <itemPath>D13/ex00/Picture.h</itemPath>
+          <itemPath>D13/ex00/Toy.cpp</itemPath>
+          <itemPath>D13/ex00/Toy.h</itemPath>
+          <itemPath>D13/ex00/ToyStory.cpp</itemPath>
+          <itemPath>D13/ex00/ToyStory.h</itemPath>
+          <itemPath>D13/ex00/Woody.cpp</itemPath>
+          <itemPath>D13/ex00/Woody.h</itemPath>
+          <itemPath>D13/ex00/main.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f15" displayName="D14A" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D14A/ex00/ex00.cpp</itemPath>
+          <itemPath>D14A/ex00/ex00.hh</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f14" displayName="D14M" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D14M/ex00/Banana.cpp</itemPath>
+          <itemPath>D14M/ex00/Banana.h</itemPath>
+          <itemPath>D14M/ex00/Cagette.cpp</itemPath>
+          <itemPath>D14M/ex00/Cagette.h</itemPath>
+          <itemPath>D14M/ex00/Citron.cpp</itemPath>
+          <itemPath>D14M/ex00/Citron.h</itemPath>
+          <itemPath>D14M/ex00/CitronVert.cpp</itemPath>
+          <itemPath>D14M/ex00/CitronVert.h</itemPath>
+          <itemPath>D14M/ex00/Coconut.cpp</itemPath>
+          <itemPath>D14M/ex00/Coconut.h</itemPath>
+          <itemPath>D14M/ex00/Fruit.cpp</itemPath>
+          <itemPath>D14M/ex00/Fruit.h</itemPath>
+          <itemPath>D14M/ex00/FruitNode.h</itemPath>
+          <itemPath>D14M/ex00/LittleHand.cpp</itemPath>
+          <itemPath>D14M/ex00/LittleHand.h</itemPath>
+          <itemPath>D14M/ex00/Mixer.cpp</itemPath>
+          <itemPath>D14M/ex00/Mixer.h</itemPath>
+          <itemPath>D14M/ex00/MixerBase.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f16" displayName="D15" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D15/ex00/ex00.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D15/ex01/ex01.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D15/ex02/ex02.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D15/ex03/ex03.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D15/ex04/ex04.cpp</itemPath>
+          <itemPath>D15/ex04/ex04.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ex05" projectFiles="true">
+          <itemPath>D15/ex05/ex05.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="ex06" projectFiles="true">
+          <itemPath>D15/ex06/ex06.hpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f17" displayName="D16" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D16/ex00/Parser.cpp</itemPath>
+          <itemPath>D16/ex00/Parser.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex03" projectFiles="true">
+          <itemPath>D16/ex03/BF_Translator.cpp</itemPath>
+          <itemPath>D16/ex03/BF_Translator.h</itemPath>
+          <itemPath>D16/ex03/main.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex04" projectFiles="true">
+          <itemPath>D16/ex04/Ratatouille.cpp</itemPath>
+          <itemPath>D16/ex04/Ratatouille.h</itemPath>
+          <itemPath>D16/ex04/main.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f18" displayName="D17" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex00" projectFiles="true">
+          <itemPath>D17/ex00/find.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex01" projectFiles="true">
+          <itemPath>D17/ex01/MyAlgorithms.hpp</itemPath>
+          <itemPath>D17/ex01/main.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex02" projectFiles="true">
+          <itemPath>D17/ex02/Cesar.cpp</itemPath>
+          <itemPath>D17/ex02/Cesar.h</itemPath>
+          <itemPath>D17/ex02/IEncryptionMethod.h</itemPath>
+          <itemPath>D17/ex02/OneTime.cpp</itemPath>
+          <itemPath>D17/ex02/OneTime.h</itemPath>
+          <itemPath>D17/ex02/main.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex03" projectFiles="true">
+          <itemPath>D17/ex02/Encryption.cpp</itemPath>
+          <itemPath>D17/ex02/Encryption.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex04" projectFiles="true">
+          <itemPath>D17/ex04/Container.hpp</itemPath>
+          <itemPath>D17/ex04/main.cpp</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Rush1" projectFiles="true">
+        <logicalFolder name="f1" displayName="ex_01" projectFiles="true">
+          <itemPath>Rush1/ex_01/ex_01.c</itemPath>
+          <itemPath>Rush1/ex_01/new.c</itemPath>
+          <itemPath>Rush1/ex_01/new.h</itemPath>
+          <itemPath>Rush1/ex_01/object.h</itemPath>
+          <itemPath>Rush1/ex_01/point.c</itemPath>
+          <itemPath>Rush1/ex_01/point.h</itemPath>
+          <itemPath>Rush1/ex_01/raise.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="ex_02" projectFiles="true">
+          <itemPath>Rush1/ex_02/ex_02.c</itemPath>
+          <itemPath>Rush1/ex_02/new.c</itemPath>
+          <itemPath>Rush1/ex_02/new.h</itemPath>
+          <itemPath>Rush1/ex_02/object.h</itemPath>
+          <itemPath>Rush1/ex_02/point.c</itemPath>
+          <itemPath>Rush1/ex_02/point.h</itemPath>
+          <itemPath>Rush1/ex_02/raise.h</itemPath>
+          <itemPath>Rush1/ex_02/vertex.c</itemPath>
+          <itemPath>Rush1/ex_02/vertex.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="ex_03" projectFiles="true">
+          <itemPath>Rush1/ex_03/ex_03.c</itemPath>
+          <itemPath>Rush1/ex_03/new.c</itemPath>
+          <itemPath>Rush1/ex_03/new.h</itemPath>
+          <itemPath>Rush1/ex_03/object.h</itemPath>
+          <itemPath>Rush1/ex_03/point.c</itemPath>
+          <itemPath>Rush1/ex_03/point.h</itemPath>
+          <itemPath>Rush1/ex_03/raise.h</itemPath>
+          <itemPath>Rush1/ex_03/vertex.c</itemPath>
+          <itemPath>Rush1/ex_03/vertex.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ex_04" projectFiles="true">
+          <itemPath>Rush1/ex_04/bool.h</itemPath>
+          <itemPath>Rush1/ex_04/char.c</itemPath>
+          <itemPath>Rush1/ex_04/char.h</itemPath>
+          <itemPath>Rush1/ex_04/ex_04.c</itemPath>
+          <itemPath>Rush1/ex_04/float.c</itemPath>
+          <itemPath>Rush1/ex_04/float.h</itemPath>
+          <itemPath>Rush1/ex_04/int.c</itemPath>
+          <itemPath>Rush1/ex_04/int.h</itemPath>
+          <itemPath>Rush1/ex_04/new.h</itemPath>
+          <itemPath>Rush1/ex_04/object.h</itemPath>
+          <itemPath>Rush1/ex_04/raise.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ex_05" projectFiles="true">
+          <itemPath>Rush1/ex_05/array.c</itemPath>
+          <itemPath>Rush1/ex_05/array.h</itemPath>
+          <itemPath>Rush1/ex_05/bool.h</itemPath>
+          <itemPath>Rush1/ex_05/char.c</itemPath>
+          <itemPath>Rush1/ex_05/char.h</itemPath>
+          <itemPath>Rush1/ex_05/container.h</itemPath>
+          <itemPath>Rush1/ex_05/ex_05.c</itemPath>
+          <itemPath>Rush1/ex_05/float.c</itemPath>
+          <itemPath>Rush1/ex_05/float.h</itemPath>
+          <itemPath>Rush1/ex_05/int.c</itemPath>
+          <itemPath>Rush1/ex_05/int.h</itemPath>
+          <itemPath>Rush1/ex_05/iterator.h</itemPath>
+          <itemPath>Rush1/ex_05/new.c</itemPath>
+          <itemPath>Rush1/ex_05/new.h</itemPath>
+          <itemPath>Rush1/ex_05/object.h</itemPath>
+          <itemPath>Rush1/ex_05/raise.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="ex_06" projectFiles="true">
+          <itemPath>Rush1/ex_06/bool.h</itemPath>
+          <itemPath>Rush1/ex_06/char.c</itemPath>
+          <itemPath>Rush1/ex_06/char.h</itemPath>
+          <itemPath>Rush1/ex_06/container.h</itemPath>
+          <itemPath>Rush1/ex_06/ex_05.c</itemPath>
+          <itemPath>Rush1/ex_06/ex_06.c</itemPath>
+          <itemPath>Rush1/ex_06/float.c</itemPath>
+          <itemPath>Rush1/ex_06/float.h</itemPath>
+          <itemPath>Rush1/ex_06/int.c</itemPath>
+          <itemPath>Rush1/ex_06/int.h</itemPath>
+          <itemPath>Rush1/ex_06/iterator.h</itemPath>
+          <itemPath>Rush1/ex_06/list.c</itemPath>
+          <itemPath>Rush1/ex_06/list.h</itemPath>
+          <itemPath>Rush1/ex_06/new.c</itemPath>
+          <itemPath>Rush1/ex_06/new.h</itemPath>
+          <itemPath>Rush1/ex_06/object.h</itemPath>
+          <itemPath>Rush1/ex_06/raise.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="ex_07" projectFiles="true">
+          <itemPath>Rush1/ex_07/File.c</itemPath>
+          <itemPath>Rush1/ex_07/File.h</itemPath>
+          <itemPath>Rush1/ex_07/FileStatic.h</itemPath>
+          <itemPath>Rush1/ex_07/Int.c</itemPath>
+          <itemPath>Rush1/ex_07/Int.h</itemPath>
+          <itemPath>Rush1/ex_07/IntStatic.h</itemPath>
+          <itemPath>Rush1/ex_07/main.c</itemPath>
+          <itemPath>Rush1/ex_07/new.c</itemPath>
+          <itemPath>Rush1/ex_07/new.h</itemPath>
+          <itemPath>Rush1/ex_07/object.h</itemPath>
+          <itemPath>Rush1/ex_07/primitif.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f12" displayName="Rush2" projectFiles="true">
+        <logicalFolder name="f3" displayName="_include" projectFiles="true">
+          <itemPath>Rush2/include/Messages.hh</itemPath>
+          <itemPath>Rush2/include/chaine</itemPath>
+          <itemPath>Rush2/include/elf</itemPath>
+          <itemPath>Rush2/include/factory</itemPath>
+          <itemPath>Rush2/include/logger</itemPath>
+          <itemPath>Rush2/include/objet</itemPath>
+          <itemPath>Rush2/include/sender</itemPath>
+          <itemPath>Rush2/include/xml</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="Chaine" projectFiles="true">
+          <itemPath>Rush2/src/Chaine/ATapisRoulant.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/ATapisRoulant.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/AbstractTable.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/AbstractTable.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/ITable.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/ITapisRoulant.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/ObjectManagerInterface.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/TableAleat.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/TableAleat.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/TablePePeNoel.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/TablePePeNoel.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/TapisRoulantAleat.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/TapisRoulantAleat.hh</itemPath>
+          <itemPath>Rush2/src/Chaine/TapisRoulantPePeNoel.cpp</itemPath>
+          <itemPath>Rush2/src/Chaine/TapisRoulantPePeNoel.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f8" displayName="Elf" projectFiles="true">
+          <itemPath>Rush2/src/Elf/Elf.cpp</itemPath>
+          <itemPath>Rush2/src/Elf/Elf.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="Factory" projectFiles="true">
+          <itemPath>Rush2/src/Factory/XmlObjetFactory.cpp</itemPath>
+          <itemPath>Rush2/src/Factory/XmlObjetFactory.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f9" displayName="Logger" projectFiles="true">
+          <itemPath>Rush2/src/Logger/Logger.cpp</itemPath>
+          <itemPath>Rush2/src/Logger/Logger.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="Objet" projectFiles="true">
+          <itemPath>Rush2/src/Objet/Carton.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/Carton.hh</itemPath>
+          <itemPath>Rush2/src/Objet/Emballage.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/Emballage.hh</itemPath>
+          <itemPath>Rush2/src/Objet/Jouet.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/Jouet.hh</itemPath>
+          <itemPath>Rush2/src/Objet/Nounours.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/Nounours.hh</itemPath>
+          <itemPath>Rush2/src/Objet/Objet.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/Objet.hh</itemPath>
+          <itemPath>Rush2/src/Objet/PapierCadeau.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/PapierCadeau.hh</itemPath>
+          <itemPath>Rush2/src/Objet/PetitPoney.cpp</itemPath>
+          <itemPath>Rush2/src/Objet/PetitPoney.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="Other" projectFiles="true">
+          <itemPath>Rush2/src/FunctionnalTest.cpp</itemPath>
+          <itemPath>Rush2/Makefile</itemPath>
+          <itemPath>Rush2/src/main.cpp</itemPath>
+          <itemPath>Rush2/src/maintest.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="Sender" projectFiles="true">
+          <itemPath>Rush2/src/Sender/SendFile.cpp</itemPath>
+          <itemPath>Rush2/src/Sender/SendFile.hh</itemPath>
+          <itemPath>Rush2/src/Sender/SendFileStrategyInterface.hh</itemPath>
+          <itemPath>Rush2/src/Sender/SendFileStrategyUnique.cpp</itemPath>
+          <itemPath>Rush2/src/Sender/SendFileStrategyUnique.hh</itemPath>
+          <itemPath>Rush2/src/Sender/SendInterface.hh</itemPath>
+          <itemPath>Rush2/src/Sender/SendManager.cpp</itemPath>
+          <itemPath>Rush2/src/Sender/SendManager.hh</itemPath>
+          <itemPath>Rush2/src/Sender/SendTerm.cpp</itemPath>
+          <itemPath>Rush2/src/Sender/SendTerm.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Xml" projectFiles="true">
+          <itemPath>Rush2/src/Xml/Xml.cpp</itemPath>
+          <itemPath>Rush2/src/Xml/Xml.hh</itemPath>
+          <itemPath>Rush2/src/Xml/XmlFactoryInterface.hh</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f19" displayName="Rush3" projectFiles="true">
+        <logicalFolder name="f1" displayName="_include" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="common" projectFiles="true">
+          <itemPath>Rush3/src/common/CpuCore.cpp</itemPath>
+          <itemPath>Rush3/src/common/CpuCore.hh</itemPath>
+          <itemPath>Rush3/src/common/ExecCommand.cpp</itemPath>
+          <itemPath>Rush3/src/common/ExecCommand.hh</itemPath>
+          <itemPath>Rush3/src/common/ModuleFactory.cpp</itemPath>
+          <itemPath>Rush3/src/common/ModuleFactory.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="config" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="launcher" projectFiles="true">
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="module" projectFiles="true">
+          <itemPath>Rush3/src/module/IMonitorModule.hh</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleCpu.cpp</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleCpu.hh</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleNetwork.cpp</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleNetwork.hh</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleRam.cpp</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleRam.hh</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleUser.cpp</itemPath>
+          <itemPath>Rush3/src/module/MonitorModuleUser.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="nCurses" projectFiles="true">
+          <itemPath>Rush3/src/NCurses/ANCursesDisplay.cpp</itemPath>
+          <itemPath>Rush3/src/NCurses/ANCursesDisplay.hh</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayCpu.cpp</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayCpu.hh</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayNetwork.cpp</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayNetwork.hh</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayRam.cpp</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayRam.hh</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayUser.cpp</itemPath>
+          <itemPath>Rush3/src/NCurses/NCursesDisplayUser.hh</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="Qt" projectFiles="true">
+          <itemPath>Rush3/src/Qt/AQMonitorDisplay.cpp</itemPath>
+          <itemPath>Rush3/src/Qt/AQMonitorDisplay.hh</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplay.cpp</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplay.hh</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplayCpu.cpp</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplayCpu.hh</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplayUser.cpp</itemPath>
+          <itemPath>Rush3/src/Qt/QMonitorDisplayUser.hh</itemPath>
+        </logicalFolder>
+        <itemPath>Rush3/Makefile</itemPath>
+        <itemPath>Rush3/Makefile_nCurses</itemPath>
+        <itemPath>Rush3/Rush3.pro</itemPath>
+        <itemPath>Rush3/src/main.cpp</itemPath>
+        <itemPath>Rush3/src/main_qt.cpp</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="D06/ex02/sickkoala.h" ex="false" tool="1" flavor="0">
+      </item>
+      <folder path="SourceFiles/f12">
+        <ccTool>
+          <incDir>
+            <pElem>Rush2/include</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,13 @@
+/**Interface**/
+#include "../src/Sender/SendInterface.hh"
+#include "../src/Sender/SendFileStrategyInterface.hh"
+
+/**Strategy**/
+#include "../src/Sender/SendFileStrategyUnique.hh"
+
+/**Sender**/
+#include "../src/Sender/SendFile.hh"
+#include "../src/Sender/SendTerm.hh"
+
+/**Manager**/
+#include "../src/Sender/SendManager.hh"

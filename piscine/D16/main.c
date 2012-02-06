@@ -1,0 +1,101 @@
+#include <stdlib.h>
+#include <string.h>
+#define MEMORY_MAX 60*1024
+
+int main() {
+ char memory[MEMORY_MAX];
+ unsigned int cursor = 0;
+memset(memory, 0, MEMORY_MAX);
+
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+while (memory[cursor]) {
+cursor++;
+memory[cursor]++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+cursor--;
+cursor--;
+cursor--;
+cursor--;
+cursor--;
+memory[cursor]--;
+}
+cursor++;
+cursor++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+write(1, &memory[cursor], 1);
+cursor++;
+cursor++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+write(1, &memory[cursor], 1);
+cursor--;
+memory[cursor]++;
+write(1, &memory[cursor], 1);
+cursor++;
+memory[cursor]--;
+memory[cursor]--;
+memory[cursor]--;
+write(1, &memory[cursor], 1);
+cursor--;
+memory[cursor]++;
+memory[cursor]++;
+write(1, &memory[cursor], 1);
+cursor--;
+cursor--;
+memory[cursor]++;
+memory[cursor]++;
+memory[cursor]++;
+write(1, &memory[cursor], 1);
+cursor--;
+write(1, &memory[cursor], 1);
+}

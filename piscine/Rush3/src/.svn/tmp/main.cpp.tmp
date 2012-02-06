@@ -1,0 +1,85 @@
+/**
+ *
+ *
+ *
+ */
+
+#include "module/MonitorModuleCpu.hh"
+#include "module/MonitorModuleRam.hh"
+#include "NCurses/NCursesDisplayCpu.hh"
+#include "NCurses/NCursesDisplayRam.hh"
+#include "NCurses/NCursesDisplayUser.hh"
+
+int main() {
+  srand(time(0));
+  MonitorModuleCpu mmc;
+  MonitorModuleRam mmr;
+<<<<<<< .mine
+
+=======
+  MonitorModuleUser mmu;
+>>>>>>> .r42
+  int i;
+
+  mmc.initialize();
+  mmr.initialize();
+<<<<<<< .mine
+=======
+  mmu.initialize();
+>>>>>>> .r42
+
+
+    init_pair(1, 0, 7);
+    init_pair(2, 1, 7);
+    init_pair(3, 2, 7);
+    init_pair(4, 3, 7);
+    init_pair(5, 4, 7);
+    init_pair(6, 5, 7);
+    init_pair(7, 6, 7);
+    init_pair(8, 7, 7);
+
+    attrset(COLOR_PAIR(0));
+
+
+
+  //std::cout << "-----------------(STEP1)--------------" << std::endl;
+  std::cout << "My CPU called " << mmc.getModuleName() << " : "
+	    << mmc.getNbCore() << " cores running !" << std::endl;
+
+  for (i = 0; i < mmc.getNbCore(); i++) {
+    std::cout << "Core " << mmc.getCore(i).getId() << " : "
+	      << mmc.getCore(i).getLoad() << "% with "
+	      << mmc.getCore(i).getFrequency() << " as frequency"
+	      << mmc[i].getName()
+	      << std::endl;
+  }
+    mmr.refresh();
+
+    std::cout << std::endl << "My RAM :" << std::endl
+	    << "Max Ram = " << mmr.getMaxRam() / (1024. * 1024)
+	    << std::endl << "Used Ram = " << mmr.getUsedRam() / (1024. * 1024)
+	    << std::endl << "Max Swap = " << mmr.getMaxSwap() / (1024. * 1024)
+	    << std::endl << "Used Swap = " << mmr.getUsedSwap()
+	    << std::endl << "Buffers = " << mmr.getBuffers()
+	    << std::endl << "Cached = " << mmr.getCached() << std::endl;
+
+
+
+  while (1)
+    {
+      NCursesDisplayCpu toto(&mmc);
+      toto.display(7,69,1,1);
+
+
+
+      NCursesDisplayRam tata(&mmr);
+      tata.display(6,69,9,1);
+
+
+      NCursesDisplayUser titi(&mmu);
+      titi.display(6,69,16, 1);
+      refresh();
+      sleep(1);
+    }
+}
+

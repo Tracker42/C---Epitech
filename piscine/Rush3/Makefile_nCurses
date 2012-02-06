@@ -1,0 +1,70 @@
+
+DEBUG = "yes"
+
+NAME = Simple
+
+LIB_DIR = lib
+INCLUDE_DIR = include
+SRC_DIR = src
+OBJ_DIR = obj_nCurse
+BIN_DIR = .
+
+SRC = 	module/MonitorModuleCpu.cpp \
+	module/MonitorModuleRam.cpp \
+	module/MonitorModuleUser.cpp \
+	module/MonitorModuleNetwork.cpp \
+	common/CpuCore.cpp \
+	common/ExecCommand.cpp \
+	NCurses/ANCursesDisplay.cpp \
+	NCurses/NCursesDisplayCpu.cpp \
+	NCurses/NCursesDisplayRam.cpp \
+	NCurses/NCursesDisplayUser.cpp \
+	NCurses/NCursesDisplayNetwork.cpp \
+	main.cpp
+
+CC = g++
+RM = rm -rf
+
+CXXFLAGS += -Wall -Werror -Wextra
+CXXFLAGS += -I$(INCLUDE_DIR)
+
+LDFLAGS += -lncurses
+
+ifeq ($(DEBUG), "yes")
+CXXFLAGS += -g
+endif
+
+OBJ = $(addprefix $(OBJ_DIR)/, $(SRC:.cpp=.o))
+
+################################################################################
+
+all: $(NAME)
+ifneq ($(DEBUG), "yes")
+	@echo cleaning project
+	@$(RM) $(OBJ) $(OBJ_DIR)
+	@echo $^ release version
+endif
+
+$(NAME): $(OBJ)
+	@echo generate $@ in folder :  $(BIN_DIR)
+	@mkdir -p $(BIN_DIR)
+	$(CC) $^ -o $(BIN_DIR)/$@ $(LDFLAGS)
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@echo making $@
+	@mkdir -p $(@D)
+	@echo compiling $< in $@
+	$(CC) -o $@ -c $< $(CXXFLAGS)
+
+clean:
+	@echo cleaning objects
+	@$(RM) $(OBJ)
+
+fclean:         clean
+	@echo cleaning all
+	@rm -Rf $(OBJ_DIR)/*
+	@$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

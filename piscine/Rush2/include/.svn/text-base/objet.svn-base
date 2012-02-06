@@ -1,0 +1,10 @@
+/**Abstract**/
+#include "../src/Objet/Objet.hh"
+#include "../src/Objet/Jouet.hh"
+#include "../src/Objet/Emballage.hh"
+
+/**Class**/
+#include "../src/Objet/Nounours.hh"
+#include "../src/Objet/PetitPoney.hh"
+#include "../src/Objet/Carton.hh"
+#include "../src/Objet/PapierCadeau.hh"
