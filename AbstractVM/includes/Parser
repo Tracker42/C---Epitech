@@ -1,0 +1,7 @@
+
+#ifndef __INCLUDE_PARSER__
+#define __INCLUDE_PARSER__
+
+#include "../src/Parser/Parser/Parser.hh"
+
+#endif

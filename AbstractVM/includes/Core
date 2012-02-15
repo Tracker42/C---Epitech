@@ -1,0 +1,9 @@
+
+#ifndef __INCLUDE_VMCORE__
+#define __INCLUDE_VMCORE__
+
+#include "../src/Vm/Core/Core.hh"
+#include "../src/Vm/Memory/PileInterface.hh"
+#include "../src/Vm/IO/OutInterface.hh"
+
+#endif

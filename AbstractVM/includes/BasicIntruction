@@ -1,0 +1,29 @@
+
+#ifndef __INCLUDE_BASICINSTRUCTION__
+#define __INCLUDE_BASICINSTRUCTION__
+
+#include "../src/Vm/Instruction/InstructionAdd.hh"
+#include "../src/Vm/Instruction/InstructionAssert.hh"
+#include "../src/Vm/Instruction/InstructionDiv.hh"
+#include "../src/Vm/Instruction/InstructionDump.hh"
+#include "../src/Vm/Instruction/InstructionExit.hh"
+#include "../src/Vm/Instruction/InstructionMod.hh"
+#include "../src/Vm/Instruction/InstructionMul.hh"
+#include "../src/Vm/Instruction/InstructionPop.hh"
+#include "../src/Vm/Instruction/InstructionPrint.hh"
+#include "../src/Vm/Instruction/InstructionPush.hh"
+#include "../src/Vm/Instruction/InstructionSub.hh"
+
+#include "../src/Vm/Instruction/InstructionAddHandler.hh"
+#include "../src/Vm/Instruction/InstructionAssertHandler.hh"
+#include "../src/Vm/Instruction/InstructionDivHandler.hh"
+#include "../src/Vm/Instruction/InstructionDumpHandler.hh"
+#include "../src/Vm/Instruction/InstructionExitHandler.hh"
+#include "../src/Vm/Instruction/InstructionModHandler.hh"
+#include "../src/Vm/Instruction/InstructionMulHandler.hh"
+#include "../src/Vm/Instruction/InstructionPopHandler.hh"
+#include "../src/Vm/Instruction/InstructionPrintHandler.hh"
+#include "../src/Vm/Instruction/InstructionPushHandler.hh"
+#include "../src/Vm/Instruction/InstructionSubHandler.hh"
+
+#endif

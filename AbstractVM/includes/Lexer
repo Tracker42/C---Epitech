@@ -1,0 +1,9 @@
+
+#ifndef __INCLUDE_LEXER__
+#define __INCLUDE_LEXER__
+
+#include "../src/Parser/Lexer/CutterInterface.hh"
+#include "../src/Parser/Lexer/BasicCutter.hh"
+#include "../src/Parser/Lexer/Lexer.hh"
+
+#endif

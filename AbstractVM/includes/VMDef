@@ -1,0 +1,24 @@
+
+#ifndef __INCLUDE_VMDEF__
+#define __INCLUDE_VMDEF__
+
+#define ABSTRACTVM_PLUGIN_FUNCTION "abstractvm_plugin"
+
+#define TOKEN_CONTROL "control"
+#define TOKEN_BEGIN "begin"
+#define TOKEN_END "end"
+#define TOKEN_ENDLINE "end_line"
+#define TOKEN_DEFAULT "default"
+
+#define VM_COMMENT ";"
+
+#define VM_TTOKEN_INSTRUCTION "instruction"
+#define VM_TTOKEN_OPERAND "operand"
+#define VM_TTOKEN_OPAR "o_par"
+#define VM_TTOKEN_CPAR "c_par"
+#define VM_TTOKEN_OPERAND "operand"
+#define VM_TTOKEN_DATA "data"
+
+
+
+#endif

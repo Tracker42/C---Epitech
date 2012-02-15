@@ -1,0 +1,10 @@
+
+#ifndef __INCLUDE_TOKEN__
+#define __INCLUDE_TOKEN__
+
+#include "../src/Parser/Token/Token.hh"
+#include "../src/Parser/Token/TokenTypeInterface.hh"
+#include "../src/Parser/Token/BasicTokenType.hh"
+#include "../src/Parser/Token/ListTokenType.hh"
+
+#endif

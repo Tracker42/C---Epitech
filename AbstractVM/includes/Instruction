@@ -1,0 +1,9 @@
+
+#ifndef __INCLUDE_INSTRUCTIONS__
+#define __INCLUDE_INSTRUCTIONS__
+
+#include "../src/Vm/Instruction/InstructionInterface.hh"
+#include "../src/Vm/Instruction/InstructionHandlerInterface.hh"
+#include "../src/Vm/Instruction/InstructionFactory.hh"
+
+#endif

@@ -1,0 +1,7 @@
+
+#ifndef __INCLUDE_ABSTRACTVM__
+#define __INCLUDE_ABSTRACTVM__
+
+#include "../src/AbstractVM.hh"
+
+#endif

@@ -1,0 +1,9 @@
+
+#ifndef __INCLUDE_OPERANDS__
+#define __INCLUDE_OPERANDS__
+
+#include "../src/Vm/Operand/OperandInterface.hh"
+#include "../src/Vm/Operand/OperandHandlerInterface.hh"
+#include "../src/Vm/Operand/OperandFactory.hh"
+
+#endif
