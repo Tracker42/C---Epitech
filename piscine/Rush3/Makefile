@@ -16,9 +16,9 @@ CXXFLAGS      = -pipe -O2 -Wall -W -D_REENTRANT $(DEFINES)
 INCPATH       = -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I. -Isrc/module -Isrc/common -Isrc/NCurses -Isrc/Qt -Imoc
 LINK          = g++
 LFLAGS        = -Wl,-O1
-LIBS          = $(SUBLIBS)  -L/usr/lib -lQtGui -lQtCore -lpthread 
+LIBS          = $(SUBLIBS)  -L/usr/lib -lQtGui -lQtCore -lpthread
 AR            = ar cqs
-RANLIB        = 
+RANLIB        =
 QMAKE         = /usr/bin/qmake
 TAR           = tar -cf
 COMPRESS      = gzip -9f
@@ -94,7 +94,7 @@ DIST          = /usr/share/qt4/mkspecs/common/g++.conf \
 		/usr/share/qt4/mkspecs/features/include_source_dir.prf \
 		Rush3.pro
 QMAKE_TARGET  = QtRush
-DESTDIR       = 
+DESTDIR       =
 TARGET        = QtRush
 
 first: all
@@ -121,7 +121,7 @@ first: all
 
 all: Makefile $(TARGET)
 
-$(TARGET):  $(OBJECTS)  
+$(TARGET):  $(OBJECTS)
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: Rush3.pro  /usr/share/qt4/mkspecs/linux-g++/qmake.conf /usr/share/qt4/mkspecs/common/g++.conf \
@@ -172,12 +172,12 @@ Makefile: Rush3.pro  /usr/share/qt4/mkspecs/linux-g++/qmake.conf /usr/share/qt4/
 qmake:  FORCE
 	@$(QMAKE) -o Makefile Rush3.pro
 
-dist: 
-	@$(CHK_DIR_EXISTS) obj/QtRush1.0.0 || $(MKDIR) obj/QtRush1.0.0 
+dist:
+	@$(CHK_DIR_EXISTS) obj/QtRush1.0.0 || $(MKDIR) obj/QtRush1.0.0
 	$(COPY_FILE) --parents $(SOURCES) $(DIST) obj/QtRush1.0.0/ && $(COPY_FILE) --parents src/common/CpuCore.hh src/common/ExecCommand.hh src/common/ModuleFactory.hh src/module/IMonitorModule.hh src/module/MonitorModuleCpu.hh src/module/MonitorModuleNetwork.hh src/module/MonitorModuleRam.hh src/module/MonitorModuleUser.hh src/Qt/AQMonitorDisplay.hh src/Qt/QMonitorDisplay.hh src/Qt/QMonitorDisplayCpu.hh src/Qt/QMonitorDisplayUser.hh obj/QtRush1.0.0/ && $(COPY_FILE) --parents src/main_qt.cpp src/common/CpuCore.cpp src/common/ExecCommand.cpp src/common/ModuleFactory.cpp src/module/MonitorModuleCpu.cpp src/module/MonitorModuleNetwork.cpp src/module/MonitorModuleRam.cpp src/module/MonitorModuleUser.cpp src/Qt/AQMonitorDisplay.cpp src/Qt/QMonitorDisplay.cpp src/Qt/QMonitorDisplayCpu.cpp src/Qt/QMonitorDisplayUser.cpp obj/QtRush1.0.0/ && (cd `dirname obj/QtRush1.0.0` && $(TAR) QtRush1.0.0.tar QtRush1.0.0 && $(COMPRESS) QtRush1.0.0.tar) && $(MOVE) `dirname obj/QtRush1.0.0`/QtRush1.0.0.tar.gz . && $(DEL_FILE) -r obj/QtRush1.0.0
 
 
-clean:compiler_clean 
+clean:compiler_clean
 	-$(DEL_FILE) $(OBJECTS)
 	-$(DEL_FILE) *~ core *.core
 
@@ -185,7 +185,7 @@ clean:compiler_clean
 ####### Sub-libraries
 
 distclean: clean
-	-$(DEL_FILE) $(TARGET) 
+	-$(DEL_FILE) $(TARGET)
 	-$(DEL_FILE) Makefile
 
 
@@ -251,7 +251,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_moc_header_clean 
+compiler_clean: compiler_moc_header_clean
 
 ####### Compile
 
@@ -348,13 +348,13 @@ obj/QMonitorDisplayUser.o: src/Qt/QMonitorDisplayUser.cpp src/Qt/QMonitorDisplay
 		src/module/MonitorModuleUser.hh
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj/QMonitorDisplayUser.o src/Qt/QMonitorDisplayUser.cpp
 
-obj/moc_QMonitorDisplay.o: moc/moc_QMonitorDisplay.cpp 
+obj/moc_QMonitorDisplay.o: moc/moc_QMonitorDisplay.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj/moc_QMonitorDisplay.o moc/moc_QMonitorDisplay.cpp
 
-obj/moc_QMonitorDisplayCpu.o: moc/moc_QMonitorDisplayCpu.cpp 
+obj/moc_QMonitorDisplayCpu.o: moc/moc_QMonitorDisplayCpu.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj/moc_QMonitorDisplayCpu.o moc/moc_QMonitorDisplayCpu.cpp
 
-obj/moc_QMonitorDisplayUser.o: moc/moc_QMonitorDisplayUser.cpp 
+obj/moc_QMonitorDisplayUser.o: moc/moc_QMonitorDisplayUser.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o obj/moc_QMonitorDisplayUser.o moc/moc_QMonitorDisplayUser.cpp
 
 ####### Install
