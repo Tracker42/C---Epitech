@@ -15,5 +15,8 @@ std::string BasicTokenType::getType() {
 }
 
 bool BasicTokenType::match(std::string token) {
-	return token == pattern;
+	if (pattern.size()) {
+		return token == pattern;
+	}
+	return true;
 }

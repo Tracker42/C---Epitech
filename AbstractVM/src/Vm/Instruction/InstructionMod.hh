@@ -16,7 +16,7 @@ public:
 	InstructionMod();
 	virtual ~InstructionMod();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

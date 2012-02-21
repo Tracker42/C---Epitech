@@ -1,11 +1,22 @@
-push int32(42)
+;Commentaire
+push int8(200)
+dump
+exit
+push int32(42) ;commentaire
 push int32(33)
 add
 push float(44.55)
 mul
-push double(42.42)
+push	    double		  (42.42)
 push int32(42)
-dump
+;dump
 pop
 assert double(42.42)
+print
+push int32(10)
+push int32(25)
+push int32(0x12)
+dump
+mod
+dump
 exit

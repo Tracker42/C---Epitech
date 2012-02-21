@@ -16,7 +16,7 @@ public:
 	InstructionExit();
 	virtual ~InstructionExit();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

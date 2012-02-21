@@ -1,0 +1,7 @@
+
+#ifndef __INCLUDE_SEGMENTCODE__
+#define __INCLUDE_SEGMENTCODE__
+
+#include "../src/Vm/Core/SegmentCode.hh"
+
+#endif

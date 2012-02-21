@@ -8,6 +8,7 @@
 #define	__INSTRUCTIONFACTORY_HH__
 
 #include <string>
+#include <list>
 #include <map>
 
 #include "InstructionHandlerInterface.hh"

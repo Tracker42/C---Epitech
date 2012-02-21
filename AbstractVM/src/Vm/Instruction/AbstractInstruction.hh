@@ -7,6 +7,9 @@
 #ifndef __ABSTRACTINSTRUCTION_HH__
 #define	__ABSTRACTINSTRUCTION_HH__
 
+#include <AbstractVM>
+#include "InstructionInterface.hh"
+
 class AbstractInstruction : public InstructionInterface {
 protected:
 
@@ -18,6 +21,8 @@ public:
 	virtual void finalize();
 
 	virtual void addParam(std::string param);
+
+	virtual void operator ()();
 
 };
 

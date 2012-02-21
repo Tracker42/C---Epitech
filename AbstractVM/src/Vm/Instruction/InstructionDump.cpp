@@ -9,6 +9,6 @@ InstructionDump::~InstructionDump() {
 
 }
 
-void InstructionDump::operator ()(Core * core) {
-
+void InstructionDump::execute() {
+	AbstractVM::getInstance()->getPile()->dump();
 }

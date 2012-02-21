@@ -16,7 +16,7 @@ public:
 	InstructionPrint();
 	virtual ~InstructionPrint();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

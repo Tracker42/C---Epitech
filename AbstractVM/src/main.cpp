@@ -1,45 +1,56 @@
 
+#include <cstring>
 #include <iostream>
 #include <fstream>
+#include <sstream>
 
-#include <Token>
-#include <Lexer>
+#include <AbstractVM>
+#include <Exception>
 
 int main(int argc, char **argv) {
-	(void) argc;
-	Lexer * lexer = new Lexer();
-	lexer->setComment(";;");
-	lexer->addCutter(new BasicCutter("("));
-	lexer->addCutter(new BasicCutter(")"));
-	lexer->addType(new BasicTokenType("open_parenthese", "("));
-	lexer->addType(new BasicTokenType("close_parenthese", ")"));
-	ListTokenType * instr = new ListTokenType("intruction");
-	instr->addPattern("push");
-	instr->addPattern("pop");
-	instr->addPattern("dump");
-	instr->addPattern("assert");
-	instr->addPattern("add");
-	instr->addPattern("sub");
-	instr->addPattern("mul");
-	instr->addPattern("div");
-	instr->addPattern("mod");
-	instr->addPattern("print");
-	instr->addPattern("exit");
-	lexer->addType(instr);
-	ListTokenType * type = new ListTokenType("data_type");
-	type->addPattern("int8");
-	type->addPattern("int16");
-	type->addPattern("int32");
-	type->addPattern("float");
-	type->addPattern("double");
-	lexer->addType(type);
-	std::ifstream file(argv[1]);
-	lexer->execute(file);
-
-	std::list<Token *> tokens = lexer->getTokens();
-	std::list<Token *>::iterator iter = tokens.begin();
-	while (iter != tokens.end()) {
-		std::cout << (*iter)->getType() << " : " << (*iter)->getValue() << std::endl;
-		iter++;
+	try {
+		int i = 1;
+		std::string file;
+		while (i < argc) {
+			std::string plugin = argv[i];
+			if (plugin.find(".so") != std::string::npos) {
+				AbstractVM::getInstance()->plugin(argv[i]);
+			}
+			else {
+				if (!file.size()) {
+					file = argv[i];
+				}
+			}
+			i++;
+		}
+		if (file.size()) {
+			std::ifstream flux(file.data());
+			AbstractVM::getInstance()->execute(flux);
+		}
+		else {
+			char buffer[4096];
+			std::string line = "";
+			std::stringstream ss;
+			do {
+				memset(buffer, 0, 4096);
+				std::cin.getline(buffer, 4096);
+				line.assign(buffer);
+				ss << line << "\n";
+				if (line.find(";;") != std::string::npos) {
+					break;
+				}
+				if (std::cin.eof()) {
+					std::cin.clear();
+					std::cin.ignore();
+				}
+			}
+			while (1);
+			AbstractVM::getInstance()->execute(ss);
+		}
 	}
+	catch (AbstractVMException & e) {
+		std::cout << "Une erreur est survenu : " << std::endl;
+		std::cout << e.what() << std::endl;
+	}
+	return 0;
 }

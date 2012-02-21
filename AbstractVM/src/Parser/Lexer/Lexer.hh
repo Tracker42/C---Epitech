@@ -7,7 +7,7 @@
 #ifndef __LEXER_HH__
 #define	__LEXER_HH__
 
-#include <fstream>
+#include <iostream>
 #include <list>
 
 #include <VMDef>
@@ -24,6 +24,7 @@ protected:
 	void clean(std::string & line);
 	void cut(std::string & line);
 	void tokenize(std::string token);
+	void clear(std::string & token);
 
 public:
 	Lexer();
@@ -37,8 +38,9 @@ public:
 	void addType(TokenTypeInterface * type);
 	void addType(std::string & type, std::string & pattern);
 
-	void execute(std::ifstream & file);
-	void executeFromFile(std::string & filename);
+	TokenTypeInterface * getType(std::string type);
+
+	void execute(std::istream & file);
 
 };
 

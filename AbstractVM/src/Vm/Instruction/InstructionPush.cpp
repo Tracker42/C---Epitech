@@ -9,6 +9,6 @@ InstructionPush::~InstructionPush() {
 
 }
 
-void InstructionPush::operator ()(Core * core) {
-  core->getMemory()->push(nb); // nb a chercher
+void InstructionPush::execute() {
+	AbstractVM::getInstance()->getPile()->push(operand);
 }

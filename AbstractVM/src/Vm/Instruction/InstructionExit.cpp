@@ -1,6 +1,8 @@
 
 #include "InstructionExit.hh"
 
+#include <Exception>
+
 InstructionExit::InstructionExit() {
 
 }
@@ -9,6 +11,6 @@ InstructionExit::~InstructionExit() {
 
 }
 
-void InstructionExit::operator ()(Core * core) {
-	core->getMemory()->exit();
+void InstructionExit::execute() {
+	throw ExitException();
 }

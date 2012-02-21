@@ -16,7 +16,7 @@ public:
 	InstructionDump();
 	virtual ~InstructionDump();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

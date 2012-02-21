@@ -7,16 +7,16 @@
 #ifndef __INSTRUCTIONPUSH_HH__
 #define	__INSTRUCTIONPUSH_HH__
 
-#include "AbstractInstruction.hh"
+#include "AbstractInstructionWithParams.hh"
 
-class InstructionPush : public AbstractInstruction {
+class InstructionPush : public AbstractInstructionWithParams {
 protected:
 
 public:
 	InstructionPush();
 	virtual ~InstructionPush();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

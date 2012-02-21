@@ -10,6 +10,8 @@
 #include <string>
 #include <list>
 
+#include <AbstractVM>
+#include <Operand>
 #include "AbstractInstruction.hh"
 
 class AbstractInstructionWithParams : public AbstractInstruction {

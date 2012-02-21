@@ -16,7 +16,7 @@ public:
 	InstructionPop();
 	virtual ~InstructionPop();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

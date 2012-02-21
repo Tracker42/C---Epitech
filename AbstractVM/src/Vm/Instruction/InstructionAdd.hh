@@ -16,7 +16,7 @@ public:
 	InstructionAdd();
 	virtual ~InstructionAdd();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

@@ -1,0 +1,18 @@
+
+#ifndef __INCLUDE_EXCEPTION__
+#define __INCLUDE_EXCEPTION__
+
+#include "../src/Exception/AbstractVMException.hh"
+#include "../src/Exception/BadParamException.hh"
+#include "../src/Exception/PluginException.hh"
+#include "../src/Exception/ParserException.hh"
+#include "../src/Exception/StopException.hh"
+#include "../src/Exception/ExitException.hh"
+#include "../src/Exception/SyntaxException.hh"
+#include "../src/Exception/PileException.hh"
+#include "../src/Exception/InstructionNotExistException.hh"
+#include "../src/Exception/OperandNotExistException.hh"
+#include "../src/Exception/OperandException.hh"
+#include "../src/Exception/OverflowException.hh"
+
+#endif

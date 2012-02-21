@@ -1,0 +1,17 @@
+
+#ifndef __INCLUDE_BASICOPERAND__
+#define __INCLUDE_BASICOPERAND__
+
+#include "../src/Vm/Operand/OperandInt8.hh"
+#include "../src/Vm/Operand/OperandInt16.hh"
+#include "../src/Vm/Operand/OperandInt32.hh"
+#include "../src/Vm/Operand/OperandFloat.hh"
+#include "../src/Vm/Operand/OperandDouble.hh"
+
+#include "../src/Vm/Operand/OperandInt8Handler.hh"
+#include "../src/Vm/Operand/OperandInt16Handler.hh"
+#include "../src/Vm/Operand/OperandInt32Handler.hh"
+#include "../src/Vm/Operand/OperandFloatHandler.hh"
+#include "../src/Vm/Operand/OperandDoubleHandler.hh"
+
+#endif

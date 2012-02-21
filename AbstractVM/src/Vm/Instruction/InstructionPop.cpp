@@ -9,6 +9,6 @@ InstructionPop::~InstructionPop() {
 
 }
 
-void InstructionPop::operator ()(Core * core) {
-	core->getMemory()->pop();
+void InstructionPop::execute() {
+	AbstractVM::getInstance()->getPile()->pop();
 }

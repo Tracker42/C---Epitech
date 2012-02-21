@@ -16,7 +16,7 @@ public:
 	InstructionDiv();
 	virtual ~InstructionDiv();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

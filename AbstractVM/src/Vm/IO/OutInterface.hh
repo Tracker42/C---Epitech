@@ -15,10 +15,6 @@ class OutInterface {
 protected:
 
 public:
-
-	OutInterface() {}
-	virtual ~OutInterface() = 0;
-
 	virtual OutInterface & operator<<(std::string string) = 0;
 	virtual OutInterface & operator<<(OperandInterface * operand) = 0;
 

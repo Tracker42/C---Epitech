@@ -4,9 +4,9 @@
 #include <dlfcn.h>
 #include <algorithm>
 #include <BasicIntruction>
+#include <BasicOperand>
+#include <BasicCore>
 #include <VMDef>
-#include "Vm/Memory/Pile.hh"
-#include "Vm/IO/OutTerminal.hh"
 
 AbstractVM * AbstractVM::instance = NULL;
 
@@ -23,6 +23,20 @@ AbstractVM::~AbstractVM() {
 	delete instructionFactory;
 	delete operandFactory;
 	std::for_each(plugins.begin(), plugins.end(), &dlclose);
+}
+
+AbstractVM * AbstractVM::getInstance() {
+	if (!instance) {
+		instance = new AbstractVM();
+	}
+	return instance;
+}
+
+void AbstractVM::destroy() {
+	if (instance) {
+		delete instance;
+		instance = NULL;
+	}
 }
 
 void AbstractVM::init() {
@@ -49,20 +63,52 @@ void AbstractVM::initInstruction() {
 
 void AbstractVM::initOperand() {
 	operandFactory = new OperandFactory();
+	operandFactory->registerOperand(new OperandInt8Handler());
+	operandFactory->registerOperand(new OperandInt16Handler());
+	operandFactory->registerOperand(new OperandInt32Handler());
+	operandFactory->registerOperand(new OperandFloatHandler());
+	operandFactory->registerOperand(new OperandDoubleHandler());
 }
 
 void AbstractVM::initParser() {
 	lexer = new Lexer();
 	parser = new Parser();
+
 	lexer->setComment(VM_COMMENT);
 	lexer->addCutter(new BasicCutter("("));
 	lexer->addCutter(new BasicCutter(")"));
+
+	BasicTokenType * opar = new BasicTokenType(VM_TTOKEN_OPAR, "(");
+	BasicTokenType * cpar = new BasicTokenType(VM_TTOKEN_CPAR, ")");
+
+	lexer->addType(opar);
+	lexer->addType(cpar);
+
+	ListTokenType * itoken = new ListTokenType(std::string(VM_TTOKEN_INSTRUCTION));
+	itoken->addListPattern(instructionFactory->getListStringInstructions());
+	lexer->addType(itoken);
+
+	ListTokenType * otoken = new ListTokenType(VM_TTOKEN_OPERAND);
+	otoken->addListPattern(operandFactory->getListStringOperands());
+	lexer->addType(otoken);
+
+	SyntaxAnalyzer * analyzer = new SyntaxAnalyzer();
 	ListTokenType * ttoken = new ListTokenType(std::string(VM_TTOKEN_INSTRUCTION));
-	ttoken->addListPattern(instructionFactory->getListStringInstructions());
-	lexer->addType(ttoken);
-	ttoken = new ListTokenType(VM_TTOKEN_OPERAND);
-	ttoken->addListPattern(operandFactory->getListStringOperands());
-	lexer->addType(ttoken);
+	std::string pattern = "push";
+	ttoken->addPattern(pattern);
+	pattern = "assert";
+	ttoken->addPattern(pattern);
+	analyzer->addTokenType(ttoken);
+	analyzer->addTokenType(otoken);
+	analyzer->addTokenType(opar);
+	analyzer->addTokenType(new BasicTokenType(VM_TTOKEN_DATA, ""));
+	analyzer->addTokenType(cpar);
+	parser->addSyntaxAnalyzer(analyzer);
+
+	analyzer = new SyntaxAnalyzer();
+	analyzer->addTokenType(itoken);
+	parser->addSyntaxAnalyzer(analyzer);
+
 }
 
 void AbstractVM::initCore() {
@@ -151,22 +197,20 @@ void AbstractVM::setOperandFactory(OperandFactory* operandFactory) {
 void AbstractVM::plugin(std::string plugin) {
 	void * handler = dlopen(plugin.data(), RTLD_NOW);
 	if (handler) {
-		abstractvm_plugin func = (abstractvm_plugin) dlsym(handler, ABSTRACTVM_PLUGIN_FUNCTION);
+		abstractvm_plugin_func func = (abstractvm_plugin_func) dlsym(handler, ABSTRACTVM_PLUGIN_FUNCTION);
 		if (func) {
 			(*func)(this);
 			plugins.push_back(handler);
 			return;
 		}
 	}
-	throw std::exception();
+	throw PluginException(plugin);
 }
 
-void AbstractVM::executeFile(std::string filename) {
-	lexer->executeFromFile(filename);
-	parser->execute(lexer->getTokens());
-	core->execute();
-}
-
-void AbstractVM::executeCin() {
-
+void AbstractVM::execute(std::istream & flux) {
+	if (flux.good()) {
+		lexer->execute(flux);
+		SegmentCode * segment = parser->execute(lexer->getTokens());
+		core->execute(segment);
+	}
 }

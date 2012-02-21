@@ -16,7 +16,7 @@ public:
 	InstructionSub();
 	virtual ~InstructionSub();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

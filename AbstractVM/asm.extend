@@ -1,0 +1,37 @@
+;Commentaire
+push char(98)
+push char('c')
+push int8(12.6)
+copy
+;add
+dump
+push float(0.987456987)
+push float(9999999999)
+dump
+mul
+dump
+push int8(100)
+copy
+add
+exit
+push int32(42) ;commentaire
+push int32(33)
+add
+push float(44.55)
+mul
+push	    double		  (42.42)
+push int32(42)
+;dump
+pop
+assert double(42.42)
+print
+push int32(10)
+push int32(25)
+push int32(0x12)
+dump
+mod
+dump
+exit
+
+
+

@@ -1,6 +1,8 @@
 
 #include "Pile.hh"
 
+#include <Exception>
+
 Pile::Pile() {
 
 }
@@ -14,10 +16,16 @@ void Pile::push(OperandInterface * item) {
 }
 
 OperandInterface * Pile::get() {
+	if (pile.empty()) {
+		throw PileException("empty");
+	}
 	return pile.top();
 }
 
 void Pile::pop() {
+	if (pile.empty()) {
+		throw PileException("empty");
+	}
 	pile.pop();
 }
 

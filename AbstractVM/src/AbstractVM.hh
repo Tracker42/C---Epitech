@@ -8,7 +8,7 @@
 #define	__ABSTRACTVM_HH__
 
 #include <string>
-#include <fstream>
+#include <iostream>
 
 #include <Lexer>
 #include <Parser>
@@ -45,6 +45,7 @@ protected:
 
 public:
 	static AbstractVM * getInstance();
+	static void destroy();
 
 	Lexer * getLexer() const;
 	Parser * getParser() const;
@@ -68,11 +69,12 @@ public:
 
 	void plugin(std::string plugin);
 
-	void executeFile(std::string filename);
-	void executeCin();
+	void execute(std::istream & flux);
 
 };
 
-typedef void (*abstractvm_plugin)(AbstractVM *);
+extern "C" {
+	typedef void (*abstractvm_plugin_func)(AbstractVM *);
+}
 
 #endif

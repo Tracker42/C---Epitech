@@ -1,6 +1,9 @@
 
-#include <cstring>
 #include "Lexer.hh"
+
+#include <cstring>
+#include <sstream>
+#include <algorithm>
 
 Lexer::Lexer() {
 
@@ -34,7 +37,18 @@ void Lexer::addType(TokenTypeInterface * type) {
 	types.push_back(type);
 }
 
-void Lexer::execute(std::ifstream & file) {
+TokenTypeInterface * Lexer::getType(std::string type) {
+	std::list<TokenTypeInterface *>::iterator iter = types.begin();
+	while (iter != types.end()) {
+		if ((*iter)->getType() == type) {
+			return *iter;
+		}
+		iter++;
+	}
+	return NULL;
+}
+
+void Lexer::execute(std::istream & file) {
 	char buffer[4096];
 	std::string line;
 	tokens.push_back(new Token(TOKEN_CONTROL, TOKEN_BEGIN));
@@ -43,17 +57,12 @@ void Lexer::execute(std::ifstream & file) {
 		file.getline(buffer, 4096);
 		line.assign(buffer);
 		clean(line);
-		cut(line);
-		tokens.push_back(new Token(TOKEN_CONTROL, TOKEN_ENDLINE));
+		if (line.size()) {
+			cut(line);
+			tokens.push_back(new Token(TOKEN_CONTROL, TOKEN_ENDLINE));
+		}
 	}
 	tokens.push_back(new Token(TOKEN_CONTROL, TOKEN_END));
-}
-
-void Lexer::executeFromFile(std::string & filename) {
-	std::ifstream file(filename.data());
-	if (file.good()) {
-		execute(file);
-	}
 }
 
 void Lexer::clean(std::string & line) {
@@ -61,11 +70,26 @@ void Lexer::clean(std::string & line) {
 	if ((pos = line.find(comment)) != std::string::npos) {
 		line = line.substr(0, pos);
 	}
+	std::stringstream ss;
+	ss << line;
+	ss >> std::ws;
+	line = "";
+	bool first = true;
+	while (!ss.eof()) {
+		if (!first) {
+			line += " ";
+		}
+		std::string get;
+		ss >> get;
+		ss >> std::ws;
+		line += get;
+		first = false;
+	}
 }
 
 void Lexer::cut(std::string & line) {
 	while (line.length()) {
-		size_t first = line.find(" ");
+		size_t first = std::min(line.find(" "), line.find("\t"));
 		CutterInterface * cutter = NULL;
 		std::list<CutterInterface *>::iterator iter = cutters.begin();
 		while (iter != cutters.end()) {
@@ -96,13 +120,25 @@ void Lexer::cut(std::string & line) {
 }
 
 void Lexer::tokenize(std::string token) {
-	std::list<TokenTypeInterface *>::iterator iter = types.begin();
-	while (iter != types.end()) {
-		if ((*iter)->match(token)) {
-			tokens.push_back(new Token((*iter)->getType(), token));
-			return;
+	clear(token);
+	if (token.size()) {
+		std::list<TokenTypeInterface *>::iterator iter = types.begin();
+		while (iter != types.end()) {
+			if ((*iter)->match(token)) {
+				tokens.push_back(new Token((*iter)->getType(), token));
+				return;
+			}
+			iter++;
 		}
-		iter++;
+		tokens.push_back(new Token(std::string(TOKEN_DEFAULT), token));
 	}
-	tokens.push_back(new Token(std::string(TOKEN_DEFAULT), token));
+}
+
+void Lexer::clear(std::string & token) {
+	while (token.size() && isspace(token[0])) {
+		token = token.substr(1);
+	}
+	while (token.size() && isspace(token[token.size() - 1])) {
+		token = token.substr(0, token.size() - 1);
+	}
 }

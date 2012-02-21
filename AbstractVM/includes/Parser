@@ -3,5 +3,7 @@
 #define __INCLUDE_PARSER__
 
 #include "../src/Parser/Parser/Parser.hh"
+#include "../src/Parser/Parser/SyntaxAnalyzerInterface.hh"
+#include "../src/Parser/Parser/SyntaxAnalyzer.hh"
 
 #endif

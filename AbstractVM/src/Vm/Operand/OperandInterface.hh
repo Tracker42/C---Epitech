@@ -9,16 +9,15 @@
 
 #include <string>
 
+typedef int eOperandType;
+
 class OperandInterface {
 protected:
 
 public:
-	OperandInterface() {}
-	virtual ~OperandInterface() = 0;
-
 	virtual std::string toString() const = 0;
 	virtual int getPrecision() const = 0;
-	virtual int getType() const = 0;
+	virtual eOperandType getType() const = 0;
 
 	virtual OperandInterface * operator+(const OperandInterface & rhs) const = 0;
 	virtual OperandInterface * operator-(const OperandInterface & rhs) const = 0;
@@ -27,6 +26,8 @@ public:
 	virtual OperandInterface * operator%(const OperandInterface & rhs) const = 0;
 
 };
+
+typedef OperandInterface IOperand;
 
 #endif
 

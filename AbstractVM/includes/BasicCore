@@ -1,0 +1,9 @@
+
+#ifndef __INCLUDE_BASICCORE__
+#define __INCLUDE_BASICCORE__
+
+#include "../src/Vm/Core/Core.hh"
+#include "../src/Vm/Memory/Pile.hh"
+#include "../src/Vm/IO/OutTerminal.hh"
+
+#endif

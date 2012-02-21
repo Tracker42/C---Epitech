@@ -1,6 +1,8 @@
 
 #include "AbstractInstruction.hh"
 
+#include <Exception>
+
 AbstractInstruction::AbstractInstruction() {
 
 }
@@ -14,10 +16,13 @@ void AbstractInstruction::initialize() {
 }
 
 void AbstractInstruction::finalize() {
-	
+
 }
 
 void AbstractInstruction::addParam(std::string param) {
-	(void) param;
-	throw std::exception();
+	throw BadParamException(param + " - no param");
+}
+
+void AbstractInstruction::operator ()() {
+	return execute();
 }

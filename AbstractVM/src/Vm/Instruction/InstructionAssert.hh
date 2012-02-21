@@ -7,16 +7,16 @@
 #ifndef __INSTRUCTIONASSERT_HH__
 #define	__INSTRUCTIONASSERT_HH__
 
-#include "AbstractInstruction.hh"
+#include "AbstractInstructionWithParams.hh"
 
-class InstructionAssert : public AbstractInstruction {
+class InstructionAssert : public AbstractInstructionWithParams {
 protected:
 
 public:
 	InstructionAssert();
 	virtual ~InstructionAssert();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 

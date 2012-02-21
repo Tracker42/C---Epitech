@@ -16,7 +16,7 @@ public:
 	InstructionMul();
 	virtual ~InstructionMul();
 
-	virtual void operator()(Core * core) = 0;
+	virtual void execute();
 
 };
 
