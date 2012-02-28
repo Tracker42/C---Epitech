@@ -1,0 +1,10 @@
+
+#ifndef __DYNAMICLIBRARYWRAPPER__
+#define __DYNAMICLIBRARYWRAPPER__
+
+#include "../src/DLManager.hh"
+#include "../src/DLHandler.hh"
+#include "../src/DLSymbol.hh"
+#include "../src/DLException.hh"
+
+#endif
