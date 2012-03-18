@@ -40,7 +40,7 @@ clean:
 	$(RM) $(OBJ_DIR)
 
 fclean: clean
-	$(RM) $(LIB)
+	$(RM) $(LIB_DIR)/$(LIB)
 	$(RM) $(LIB_DIR)
 
 re: fclean all

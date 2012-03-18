@@ -16,7 +16,7 @@ DLHandler::DLHandler(const DLHandler & src) {
 }
 
 DLHandler::~DLHandler() {
-
+	close();
 }
 
 const std::string & DLHandler::getName() const {

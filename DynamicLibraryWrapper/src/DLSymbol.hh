@@ -14,8 +14,6 @@ class DLSymbol;
 
 #include "DLHandler.hh"
 
-#define DLCAST(cast, sym) ((cast) (*sym))
-
 class DLSymbol {
 protected:
 	DLHandler * handler;
